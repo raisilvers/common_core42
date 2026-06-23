@@ -6,7 +6,7 @@ char	*ft_strrchr(const char *s, int c)
 	int	i;
 
 	i = 0;
-	while (s[i])
+	while (s[i] != '\0')
 		i++;
 
 	while (i >= 0)
@@ -18,23 +18,22 @@ char	*ft_strrchr(const char *s, int c)
 	return (NULL);
 }
 /*
-int main(void)
+int	main(void)
 {
-    char    *str;
-    char    *p;
+	char    *str;
+	char    *p;
 
-    str = "banana";
+	str = "banana";
+	
+	p = ft_strrchr(str, 'a');
+	
+	if (p)
+    	{
+        	printf("%c\n", *p);
+    	}
+   	else
+        	printf("Nao encontrado\n");
 
-    p = ft_strrchr(str, 'a');
-
-    if (p)
-    {
-        printf("%c\n", *p);
-        printf("%s\n", p);
-    }
-    else
-        printf("Nao encontrado\n");
-
-    return (0);
+	return (0);
 }
 */
