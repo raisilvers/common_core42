@@ -3,23 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: raimunda <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: raimunda <raimunda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/24 19:54:06 by raimunda          #+#    #+#             */
-/*   Updated: 2026/06/24 19:54:12 by raimunda         ###   ########.fr       */
+/*   Updated: 2026/06/28 17:33:24 by raimunda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h>
-//#include <string.h>
-
-#include <stddef.h>
+#include "libft.h"
 
 void	*ft_memset(void *b, int c, size_t len)
 {
-	unsigned char *p = b;
-	size_t	i;
+	unsigned char	*p;
+	size_t			i;
 
+	p = (unsigned char *)b;
 	i = 0;
 	while (i < len)
 	{
@@ -37,5 +35,4 @@ int	main(void)
 	printf("Depois : %s\n", str);
 
 	return (0);
-}
-*/
+}*/

@@ -1,28 +1,14 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: raimunda <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: raimunda <raimunda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/06/24 19:52:53 by raimunda          #+#    #+#             */
-/*   Updated: 2026/06/24 19:52:55 by raimunda         ###   ########.fr       */
+/*   Created: 2026/06/28 17:47:37 by raimunda          #+#    #+#             */
+/*   Updated: 2026/06/28 17:47:55 by raimunda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalnum(char c)
-{
-	if ((c >= '0' && c <= '9')
-		|| (c >= 'a' && c <= 'z')
-			|| (c >= 'A' && c <= 'Z'))
-		return (1);
-	return (0);
-}
-/*
-#include <stdio.h>
-int	main()
-{
-	printf("%d", ft_isalnum('\n'));
-	return (0);
-}
-*/
+#include "libft.h"
+

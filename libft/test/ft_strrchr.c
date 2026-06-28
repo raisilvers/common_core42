@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: raimunda <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: raimunda <raimunda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/24 19:55:36 by raimunda          #+#    #+#             */
-/*   Updated: 2026/06/24 19:55:37 by raimunda         ###   ########.fr       */
+/*   Updated: 2026/06/28 17:02:19 by raimunda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
-#include <stdio.h>
+#include "libft.h"
 
 char	*ft_strrchr(const char *s, int c)
 {
@@ -20,7 +19,6 @@ char	*ft_strrchr(const char *s, int c)
 	i = 0;
 	while (s[i] != '\0')
 		i++;
-
 	while (i >= 0)
 	{
 		if (s[i] == (char)c)

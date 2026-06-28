@@ -3,30 +3,29 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: raimunda <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: raimunda <raimunda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/06/24 19:25:23 by raimunda          #+#    #+#             */
-/*   Updated: 2026/06/24 19:25:33 by raimunda         ###   ########.fr       */
+/*   Created: 2026/06/28 16:32:11 by raimunda          #+#    #+#             */
+/*   Updated: 2026/06/28 16:32:45 by raimunda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
-//#include <stdio.h>
+#include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {
-	unsigned char *p;
-	size_t	i;
+	unsigned char	*p;
+	size_t			i;
 
 	p = (unsigned char *)s;
 	i = 0;
-
 	while (i < n)
 	{
 		p[i] = 0;
 		i++;
 	}
 }
+
 /*
 void	ft_bzero(void *s, size_t n);
 

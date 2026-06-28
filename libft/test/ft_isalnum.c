@@ -1,19 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: raimunda <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: raimunda <raimunda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/06/24 19:52:32 by raimunda          #+#    #+#             */
-/*   Updated: 2026/06/24 19:52:35 by raimunda         ###   ########.fr       */
+/*   Created: 2026/06/24 19:52:53 by raimunda          #+#    #+#             */
+/*   Updated: 2026/06/28 17:04:34 by raimunda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalpha(char c)
+include "libft.h"
+
+int	ft_isalnum(char c)
 {
-	if ((c >= 'A') && (c <= 'Z')
-		&& (c >= 'a') && (c <= 'z'))
+	if ((c >= '0' && c <= '9')
+		|| (c >= 'a' && c <= 'z')
+		|| (c >= 'A' && c <= 'Z'))
 		return (1);
 	return (0);
 }
@@ -21,7 +24,7 @@ int	ft_isalpha(char c)
 #include <stdio.h>
 int	main()
 {
-	printf("%d", ft_isalpha('*'));
+	printf("%d", ft_isalnum('\n'));
 	return (0);
 }
 */

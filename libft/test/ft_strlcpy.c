@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: raimunda <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: raimunda <raimunda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/24 19:54:59 by raimunda          #+#    #+#             */
-/*   Updated: 2026/06/24 19:55:00 by raimunda         ###   ########.fr       */
+/*   Updated: 2026/06/28 17:19:42 by raimunda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
+#include "libft.h"
 
 size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 {
@@ -28,9 +27,8 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 		dest[i] = '\0';
 	}
 	while (src[i] != '\0')
-	       i++;
-
-	return (i);	
+	i++;
+	return (i);
 }
 /*
 int	main(void)
@@ -46,7 +44,4 @@ int	main(void)
 	printf("ret = %zu\n", ret);
 
 	return (0);
-}
-
-A ft_strlcpy copia uma string de src para dest, copiando no máximo size - 1 caracteres para garantir espaço para o caractere nulo \0. No final, ela retorna o tamanho total da string de origem (src). Isso permite copiar strings de forma segura sem ultrapassar o tamanho do buffer de destino.
-*/
+}*/

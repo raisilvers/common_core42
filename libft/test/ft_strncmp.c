@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: raimunda <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: raimunda <raimunda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/24 19:55:21 by raimunda          #+#    #+#             */
-/*   Updated: 2026/06/24 19:55:23 by raimunda         ###   ########.fr       */
+/*   Updated: 2026/06/28 17:03:40 by raimunda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 int	ft_strncmp(const char *s1, const char *s2, unsigned int n)
 {
@@ -21,10 +21,8 @@ int	ft_strncmp(const char *s1, const char *s2, unsigned int n)
 	{
 		if (s1[i] != s2[i])
 			return ((unsigned char)s1[1] - (unsigned char)s2[i]);
-
 		if (s1[1] == '\0')
 			return (0);
-		
 		i++;
 	}
 	return (0);
@@ -37,4 +35,3 @@ int	main(void)
 	return (0);
 }
 */
-// Comparar duas strings até no máximo n caracteres e dizer qual é maior, menor ou igual.

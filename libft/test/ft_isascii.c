@@ -1,18 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: raimunda <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: raimunda <raimunda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/06/24 19:56:22 by raimunda          #+#    #+#             */
-/*   Updated: 2026/06/24 19:56:24 by raimunda         ###   ########.fr       */
+/*   Created: 2026/06/24 19:53:06 by raimunda          #+#    #+#             */
+/*   Updated: 2026/06/28 17:12:41 by raimunda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "libft.h"
 
-size_t ft_strlen(const char *str);
-
-#endif
+int	ft_isascii(int c)
+{
+	if ((c >= 0) && (c <= 127))
+	{
+		return (1);
+		return (0);
+	}
+}

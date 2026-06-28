@@ -1,31 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_toupper.c                                       :+:      :+:    :+:   */
+/*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: raimunda <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: raimunda <raimunda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/06/24 19:55:53 by raimunda          #+#    #+#             */
-/*   Updated: 2026/06/24 19:55:54 by raimunda         ###   ########.fr       */
+/*   Created: 2026/06/24 19:53:27 by raimunda          #+#    #+#             */
+/*   Updated: 2026/06/28 17:14:10 by raimunda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
-int	ft_toupper(int c)
+int	ft_isprint(int c)
 {
-	if (c >= 'a' && c <= 'z')
-		c = c - 32;
-	return (c);
-}
-/*
-int main(void)
-{
-	char	a;
-
-	a = ft_toupper('a');
-	printf("%c\n", a);
-
+	if (c >= 32 && c <= 126)
+		return (1);
 	return (0);
 }
-*/
