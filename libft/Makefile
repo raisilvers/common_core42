@@ -31,7 +31,6 @@ SRCS = ft_isalpha.c\
 	   ft_memcmp.c\
 	   ft_memmove.c\
 	   ft_putchar_fd.c\
-	   ft_putstr_fd.c\
 	   ft_putnbr_fd.c\
 	   ft_putendl_fd.c\
 	   ft_atoi.c\
@@ -46,8 +45,7 @@ SRCS = ft_isalpha.c\
 	   ft_lstdelone.c\
 	   ft_lstclear.c\
 	   ft_lstiter.c\
-	   ft_lstmap.c\
-
+	ft_lstmap.c
 
 OBJS = $(SRCS:.c=.o)
 
@@ -66,3 +64,5 @@ fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
+
+.PHONY: all clean fclean re
