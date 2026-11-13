@@ -5,10 +5,12 @@ int ft_toupper(int  c)
         return (c);
 }
 
+/*
 #include <stdio.h>
 
 int main()
 {
-    printf("%C\n", ft_toupper('f'));
+    printf("%c\n", ft_toupper('f'));
     return (0);
 }
+*/
